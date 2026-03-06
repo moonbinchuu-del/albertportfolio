@@ -1,0 +1,270 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #111;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: orange;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 80px 100px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.badge {
+    background: rgba(255,165,0,0.2);
+    padding: 6px 15px;
+    border-radius: 20px;
+    color: orange;
+    font-weight: bold;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.hero-text h1 span {
+    color: orange;
+}
+
+.hero-text h2 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.primary {
+    background: linear-gradient(45deg, orange, red);
+    color: white;
+}
+
+.secondary {
+    border: 2px solid orange;
+    color: orange;
+}
+
+.secondary:hover {
+    background: orange;
+    color: white;
+}
+
+.primary:hover {
+    opacity: 0.8;
+}
+
+.contact-info {
+    color: #aaa;
+}
+
+/* Hero Layout */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 80px 100px;
+}
+
+/* Left Text */
+.hero-text {
+    width: 55%;
+}
+
+/* Right Image */
+.hero-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid orange;
+    box-shadow: 0 0 40px rgba(255, 165, 0, 0.5);
+}
+
+/* Image Fit */
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Sections */
+.section {
+    padding: 80px;
+    text-align: center;
+}
+
+.section.dark {
+    background: #181818;
+}
+
+.section h2 {
+    margin-bottom: 40px;
+    color: orange;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+    width: 280px;
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.1);
+}
+
+.summary {
+    max-width: 900px;
+    margin: auto;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        padding: 20px 30px;
+    }
+
+    .section {
+        padding: 60px 30px;
+    }
+}
+/* Projects Section */
+.projects {
+    padding: 80px;
+    background: #f8f9fa;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+    font-size: 32px;
+}
+
+.project-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.project-card ul {
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-left: 18px;
+}
+
+.project-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background: linear-gradient(45deg, orange, #ff6a00);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    opacity: 0.8;
+}
